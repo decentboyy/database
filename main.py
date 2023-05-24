@@ -1,7 +1,7 @@
 import logging
 from pymongo import MongoClient
 from telegram import Update
-from telegram.ext import Updater, MessageHandler, Filters, CallbackContext
+from telegram.ext import Updater, MessageHandler, CallbackContext
 
 TOKEN = "5058249365:AAE7RbZy5yn28LYjmfFlFt9WxalJrDny8zk"
 MONGO_URI = "mongodb+srv://abc:abcd@cluster0.nkcgfam.mongodb.net/?retryWrites=true&w=majority"  # Update with your MongoDB connection URI
@@ -43,7 +43,7 @@ def store_chat_data(update: Update, context: CallbackContext):
 
 
 def main():
-    updater = Updater(TOKEN, use_context=True)
+    updater = Updater(TOKEN)
     dispatcher = updater.dispatcher
 
     # Register the message handler to analyze and store chat data
