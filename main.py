@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from telegram import Update
 from telegram.ext import Updater, MessageHandler, CallbackContext, Filters
 
-TOKEN = "5058249365:AAE7RbZy5yn28LYjmfFlFt9WxalJrDny8zk"
+TOKEN = "6101196560:AAE9Te6XfIfldcJcqdnh6Yb7SHPVi_z3hRc"
 MONGO_URI = "mongodb+srv://abc:abcd@cluster0.nkcgfam.mongodb.net/?retryWrites=true&w=majority"  # Update with your MongoDB connection URI
 DATABASE_NAME = "telegram_chat_analysis"
 COLLECTION_NAME = "chat_data"
